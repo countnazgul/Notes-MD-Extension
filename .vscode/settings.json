@@ -32,5 +32,11 @@
     },
     "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "cSpell.words": [
+        "notesmd",
+        "notesync",
+        "nuxt",
+        "webpackbar"
+    ]
 }

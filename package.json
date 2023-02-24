@@ -1,12 +1,12 @@
 {
-    "name": "vscode-extension-boilerplate",
-    "displayName": "VSCode extension boilerplate",
+    "name": "note-md",
+    "displayName": "Notes.md",
     "version": "0.0.1",
     "preview": true,
-    "description": "An awesome boilerplate for VSCode extension development",
-    "publisher": "YuTengjing",
+    "description": "Sync note.md files",
+    "publisher": "countnazgul",
     "icon": "images/logo.png",
-    "license": "SEE LICENSE IN LICENSE",
+    "license": "MIT",
     "main": "dist/extension.js",
     "scripts": {
         "vscode:prepublish": "npm run build",
@@ -21,30 +21,30 @@
         "prepare": "husky install"
     },
     "author": {
-        "name": "YuTengjing",
-        "url": "https://github.com/tjx666",
-        "email": "ytj2713151713@gmail.com"
+        "name": "Stefan Stoychev",
+        "url": "https://github.com/countnazgul",
+        "email": "stefan.stoichev@gmail.com"
     },
     "badges": [
         {
             "url": "https://img.shields.io/badge/License-MIT-brightgreen.svg",
             "description": "License: MIT",
-            "href": "https://github.com/tjx666/vscode-extension-boilerplate/blob/master/LICENSE"
+            "href": "https://github.com/countnazgul/Notes-MD-Extension/blob/master/LICENSE"
         },
         {
             "url": "https://img.shields.io/badge/PRs-welcome-brightgreen.svg",
             "description": "PRs Welcome",
-            "href": "https://github.com/tjx666/vscode-extension-boilerplate"
+            "href": "https://github.com/countnazgul/Notes-MD-Extension"
         }
     ],
-    "homepage": "https://github.com/tjx666/vscode-extension-boilerplate/blob/master/README.md",
+    "homepage": "https://notes.informatiqal.com",
     "bugs": {
-        "url": "https://github.com/tjx666/vscode-extension-boilerplate/issues",
-        "email": "ytj2713151713@gmail.com"
+        "url": "https://github.com/countnazgul/Notes-MD-Extension/issues",
+        "email": "stefan.stoichev@gmail.com"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/tjx666/vscode-extension-boilerplate"
+        "url": "https://github.com/countnazgul/Notes-MD-Extension"
     },
     "engines": {
         "vscode": "^1.73.0",
@@ -60,13 +60,13 @@
         "boilerplate"
     ],
     "activationEvents": [
-        "onCommand:VSCodeExtensionBoilerplate.helloVSCode"
+        "onStartupFinished"
     ],
     "contributes": {
         "commands": [
             {
-                "command": "VSCodeExtensionBoilerplate.helloVSCode",
-                "title": "Hello Visual Studio Code!"
+                "command": "NoteSync.setToken",
+                "title": "Notes.md: Set API token"
             }
         ]
     },
@@ -118,5 +118,8 @@
         "webpack-merge": "^5.8.0",
         "webpackbar": "^5.0.2",
         "yargs": "^17.6.2"
+    },
+    "dependencies": {
+        "node-fetch": "^3.3.0"
     }
 }

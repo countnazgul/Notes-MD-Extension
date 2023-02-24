@@ -1,12 +1,13 @@
-# vscode extension boilerplate
+# Notes.md extension
 
-[![GitHub](https://img.shields.io/github/license/tjx666/vscode-extension-boilerplate)](https://github.com/tjx666/vscode-extension-boilerplate/blob/master/LICENSE) [![Known Vulnerabilities](https://snyk.io/test/github/tjx666/vscode-extension-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/tjx666/vscode-extension-boilerplate?targetFile=package.json) [![Percentage of issues still open](https://isitmaintained.com/badge/open/tjx666/vscode-extension-boilerplate.svg)](http://isitmaintained.com/project/tjx666/vscode-extension-boilerplate') [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
+[![GitHub](https://img.shields.io/github/license/tjx666/vscode-extension-boilerplate)](https://github.com/tjx666/vscode-extension-boilerplate/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
-An awesome boilerplate for VSCode extension development. You can use it just as described in the [official documentation](https://code.visualstudio.com/api).
+Small VSCode extension that will sync the content of `Notes.md` file on save.
 
-example extensions:
+Once the extension is installed:
 
-1. [View GitHub Repository](https://github.com/tjx666/view-github-repository)
-2. [Open in External App](https://github.com/tjx666/open-in-external-app)
-3. [VSCode Fe Helper](https://github.com/tjx666/vscode-fe-helper)
-4. [Scripting Listener](https://github.com/tjx666/scripting-listener)
+- visit [notes.informatiqal.com](https://notes.informatiqal.com) and login with GitHub
+- navigate to the profile page and generate API toke
+- copy the generated token
+- in VSCode search for `Notes.md: Set API token` command and paste the API token
+- thats it!
