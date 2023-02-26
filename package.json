@@ -1,7 +1,7 @@
 {
     "name": "note-md",
     "displayName": "Notes.md",
-    "version": "0.0.1",
+    "version": "0.1.1",
     "preview": true,
     "description": "Sync note.md files",
     "publisher": "countnazgul",
@@ -65,7 +65,7 @@
     "contributes": {
         "commands": [
             {
-                "command": "NoteSync.setToken",
+                "command": "NotesMD.setToken",
                 "title": "Notes.md: Set API token"
             }
         ]
